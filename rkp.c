@@ -95,7 +95,7 @@ main(int argc, char **argv)
 	rewind(in);
 	a = (double complex *)malloc(n * sizeof(double complex));
 	fread(a, n, sizeof(double complex), in);
-  fclose(in);
+  	fclose(in);
 	
 	r = (int *)malloc(n * sizeof(int));
 	init_genrand((int)time( NULL ));
